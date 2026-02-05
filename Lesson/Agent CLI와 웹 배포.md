@@ -121,7 +121,7 @@
 
 # 실습
 
-- Agent CLI와 함께 Flutter로 Todo App 만들기
+- Agent IDE & CLI(Antigravity + Opencode)와 함께 Flutter로 Todo App 만들기
 - Flutter Web 배포
 - Agent CLI와 함께 Nextjs 기본 프로젝트 배포
 - 시간이 된다면 Flutter Todo App Firebase 연동
