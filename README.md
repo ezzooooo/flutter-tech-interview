@@ -41,6 +41,17 @@
     - 성능 최적화 팁
     - 무한 스크롤 구현
 
+- #### 핵심 개념
+
+  - [위젯 트리와 렌더링 파이프라인](./Flutter/위젯%20트리와%20렌더링%20파이프라인.md)
+    - Widget Tree, Element Tree, RenderObject Tree
+    - 렌더링 5단계 (Build → Layout → Paint → Compositing → Rasterize)
+    - 렌더링 성능 최적화
+  - [BuildContext](./Flutter/BuildContext.md)
+    - BuildContext의 정의와 실체 (Element)
+    - of(context) 패턴과 InheritedWidget 탐색
+    - 주의사항 (비동기, initState, context 위치)
+
 - #### 기타
 
   - [상수 클래스 (Constants)](./Flutter/상수%20클래스(Constants).md)
@@ -50,6 +61,11 @@
 
 ### Architecture
 
+- [MVVM 패턴](./Architecture/MVVM%20패턴.md)
+  - MVVM 패턴의 정의와 구성 요소 (Model, View, ViewModel)
+  - MVVM의 특징과 장점
+  - MVVM vs StatefulWidget 비교
+  - Flutter에서 MVVM 구현 방법
 - [ViewModel의 역할](./Architecture/ViewModel의%20역할.md)
   - MVVM 패턴과 ViewModel
   - ViewModel의 핵심 역할 5가지
@@ -62,9 +78,9 @@
 ### Flutter 심화
 
 - [ ] 위젯 생명주기 (Widget Lifecycle)
-- [ ] 렌더링 파이프라인 (Rendering Pipeline)
+- [x] 렌더링 파이프라인 (Rendering Pipeline)
 - [ ] Key의 역할과 종류
-- [ ] BuildContext 이해하기
+- [x] BuildContext 이해하기
 - [ ] Navigator 2.0 / go_router
 - [ ] 애니메이션 (Animation)
 - [ ] 플랫폼 채널 (Platform Channel)
@@ -126,9 +142,12 @@ flutter-tech-interview/
 │   │   └── Riverpod vs Provider.md
 │   ├── Widget/
 │   │   └── ListView와 스크롤 위젯.md
-│   └── 상수 클래스(Constants).md
+│   ├── 상수 클래스(Constants).md
+│   ├── 위젯 트리와 렌더링 파이프라인.md
+│   └── BuildContext.md
 ├── Architecture/
-│   └── ViewModel의 역할.md
+│   ├── ViewModel의 역할.md
+│   └── MVVM 패턴.md
 ├── Dart/                           # 예정
 └── Network/                        # 예정
 ```
